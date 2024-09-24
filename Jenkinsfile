@@ -27,5 +27,11 @@ curl localhost:3000'''
       }
     }
 
+    stage('archive artifact') {
+      steps {
+        archiveArtifacts '*'
+      }
+    }
+
   }
 }
